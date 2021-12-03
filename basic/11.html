@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue router跳转传参 | NirvanaJ&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/pink.jpg">
+    <link rel="manifest" href="/images/pink.jpg">
+    <link rel="apple-touch-icon" href="/images/pink.jpg">
+    <meta name="description" content="前端工程师的进阶之路">
+    <meta http-quiv="pragma" cotent="no-cache">
+    <meta http-quiv="expires" cotent="0">
+    <meta http-quiv="pragma" cotent="no-cache, must-revalidate">
+    
+    <link rel="preload" href="/assets/css/0.styles.35bcedcf.css" as="style"><link rel="preload" href="/assets/js/app.1b58749a.js" as="script"><link rel="preload" href="/assets/js/2.5bad0c7e.js" as="script"><link rel="preload" href="/assets/js/11.34df726f.js" as="script"><link rel="prefetch" href="/assets/js/10.51a109b0.js"><link rel="prefetch" href="/assets/js/12.1db90d49.js"><link rel="prefetch" href="/assets/js/13.1665df06.js"><link rel="prefetch" href="/assets/js/14.848b5107.js"><link rel="prefetch" href="/assets/js/15.b3fa3185.js"><link rel="prefetch" href="/assets/js/16.eb76b78a.js"><link rel="prefetch" href="/assets/js/17.2cd326da.js"><link rel="prefetch" href="/assets/js/18.1c03fcae.js"><link rel="prefetch" href="/assets/js/19.4e88f914.js"><link rel="prefetch" href="/assets/js/20.25d80c43.js"><link rel="prefetch" href="/assets/js/21.21e8690d.js"><link rel="prefetch" href="/assets/js/22.55a6568a.js"><link rel="prefetch" href="/assets/js/23.b7e5857e.js"><link rel="prefetch" href="/assets/js/24.cd5a9584.js"><link rel="prefetch" href="/assets/js/25.36bf8664.js"><link rel="prefetch" href="/assets/js/26.f0a81750.js"><link rel="prefetch" href="/assets/js/3.475aa657.js"><link rel="prefetch" href="/assets/js/4.a6223f78.js"><link rel="prefetch" href="/assets/js/5.061c4c91.js"><link rel="prefetch" href="/assets/js/6.05fa0e18.js"><link rel="prefetch" href="/assets/js/7.d0436fc7.js"><link rel="prefetch" href="/assets/js/8.db2b4e4a.js"><link rel="prefetch" href="/assets/js/9.93e06b87.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.35bcedcf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">NirvanaJ's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/basic/1.html" class="nav-link">
+  前端基础
+</a></div><div class="nav-item"><a href="/advanced/1.html" class="nav-link">
+  进阶之路
+</a></div><div class="nav-item"><a href="/engineering/规范化/commit.html" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><a href="/interview/1.html" class="nav-link">
+  面试题合集
+</a></div><div class="nav-item"><a href="/others/1.html" class="nav-link">
+  诗和远方
+</a></div><div class="nav-item"><a href="https://github.com/aluojie" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/basic/1.html" class="nav-link">
+  前端基础
+</a></div><div class="nav-item"><a href="/advanced/1.html" class="nav-link">
+  进阶之路
+</a></div><div class="nav-item"><a href="/engineering/规范化/commit.html" class="nav-link">
+  前端工程化
+</a></div><div class="nav-item"><a href="/interview/1.html" class="nav-link">
+  面试题合集
+</a></div><div class="nav-item"><a href="/others/1.html" class="nav-link">
+  诗和远方
+</a></div><div class="nav-item"><a href="https://github.com/aluojie" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/basic/1.html" class="sidebar-link">关于Apple设备私有的apple-touch-icon属性详解</a></li><li><a href="/basic/2.html" class="sidebar-link">前端开发之tap点透浅谈</a></li><li><a href="/basic/3.html" class="sidebar-link">css的引入方式共三种及@import和link的区别</a></li><li><a href="/basic/4.html" class="sidebar-link">表现与数据分离</a></li><li><a href="/basic/5.html" class="sidebar-link">ECMAScript基本类型值和引用类型值的区别</a></li><li><a href="/basic/6.html" class="sidebar-link">Javascript事件流</a></li><li><a href="/basic/7.html" class="sidebar-link">JSON谜思</a></li><li><a href="/basic/8.html" class="sidebar-link">npm5.0新增package-lock.json文件挖的坑</a></li><li><a href="/basic/9.html" class="sidebar-link">querySelector和querySelectorAll以及$(query).find()的区别</a></li><li><a href="/basic/10.html" class="sidebar-link">unix时间戳－日期互转</a></li><li><a href="/basic/11.html" aria-current="page" class="active sidebar-link">vue router跳转传参</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>http://blog.csdn.net/qq_15646957/article/details/78070862</p> <p>发送页面this.$router
+接收页面this.$route</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.$router.push({
+path: '',
+query: {
+key: value
+}
+})
+
+----or------
+
+this.$router.push({
+name: '', //routes中要配置name名称
+params: { //有params时，不能用path,
+key: value
+}
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/basic/10.html" class="prev">
+        unix时间戳－日期互转
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1b58749a.js" defer></script><script src="/assets/js/2.5bad0c7e.js" defer></script><script src="/assets/js/11.34df726f.js" defer></script>
+  </body>
+</html>
